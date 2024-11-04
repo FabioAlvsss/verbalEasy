@@ -19,6 +19,8 @@
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Send+Flowers&display=swap');
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -120,6 +122,19 @@
         margin-top: 1.5em;
         background-color: #e07a3aff;
       }
+
+      .titulo-teacher {
+      font-family: "Pacifico", serif;
+      font-weight: 400;
+      font-style: normal;
+      }
+
+
+      .send-flowers-regular {
+       font-family: "Send Flowers", cursive;
+      font-weight: 400;
+      font-style: normal;
+      }
   
     </style>
 
@@ -144,42 +159,6 @@
       </symbol>
     </svg>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-
-
     <div class="container text-center">
       <img  class="logo"   src="img/logo.png">
       <header class="d-flex justify-content-center py-3">
@@ -200,35 +179,46 @@
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/new-york-2.jpg" height="100%" width="98%">
+        <img src="img/new-york-2.jpg" height="100%" width="100%">
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <h1>Explore os encantos de Nova York</h1>
+            <p class="opacity-30">Venha aprimorar seu inglês e descobrir a magia de Nova York em uma viagem inesquecível com a nossa escola</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Saiba Mais</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <img src="img/londres_4.jpg" height="100%" width="100%">
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <h1>London Calling: Aprenda Inglês na Capital do Mundo</h1>
+            <p>Londres é onde história, cultura e modernidade se encontram, oferecendo uma experiência única para quem deseja explorar o mundo e aprender inglês.</p>
             <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <img src="img/sidney.jpg" height="100%" width="100%">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Sidney: Onde o Inglês Encontra o Paraíso</h1>
+            <p>Sydney é uma cidade vibrante que combina praias deslumbrantes, uma cultura única e um ambiente cosmopolita perfeito para quem quer aprender inglês de forma imersiva, enquanto explora uma das metrópoles mais icônicas do mundo.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Venha conhecer</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/disney.webp" height="100%" width="100%">
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <h1>Orlando: Aprenda Inglês com Diversão e Magia</h1>
+            <p style="color: aliceblue;">"Orlando é o destino perfeito para quem deseja aprender inglês enquanto se diverte em parques temáticos, experiências culturais e uma atmosfera vibrante, tornando cada dia uma nova aventura!</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Venha se aventurar</a></p>
           </div>
         </div>
       </div>
@@ -253,16 +243,16 @@
     <!-- Three columns of text below the carousel -->
     <div class="row text-center">
       <div class="col-lg-6">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+        <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="img/camila_avatar.png" ><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <h2 class="fw-normal titulo-teacher">Camila Nera Lima</h2>
+        <p>Conheça mais a história da  nossa <i>teacher</i> Camila Nera Lima</p>
+        <p><a class="btn btn-primary" href="#">Let´s Go ! &raquo;</a></p>
       </div>
       <div class="col-lg-6">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal">Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+        <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="img/anna_luisa_avatar.png"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <h2 class="fw-normal titulo-teacher">Anna Luisa Lopes</h2>
+        Conheça mais a história da  nossa <i>teacher</i> Anna Luisa Lopes</p>
+        <p><a class="btn btn-primary" href="#">Let´s Go ! &raquo;</a></p>
       </div>
     </div>
 
@@ -273,8 +263,12 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading fw-normal lh-1"><i>Subject Pronouns </i> <span class="text-body-secondary">(Pronomes Pessoais)</span></h2>
+        <p class="lead">Heeello People! Welcome to our new channel: VerbalEASY!
+          Este canal for feito exatamente para VOCÊ que quer aprender inglês do básico. Por isso, nosso primeiro vídeo trata dos pronomes pessoais em inglês. 
+          E aí, você conhece? Não? Bora aprender então! 
+          Não esqueça de deixar seu comentário, se inscrever e ativar o sininho hein! Foca que a fluência vem!
+          See you!</p>
       </div>
       <div class="col-md-5">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/gLIKWMCrIuw?si=MmCdn5NVqdMlLoRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -285,20 +279,22 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Verbo "to be" - O famoso verbo <span class="text-body-secondary">SER/ESTAR em inglês</span></h2>
+        <p class="lead">Hello people! Este vídeo ensina você (de uma vez por TODAS) sobre o famoso VERBO "TO BE". Aqui, explicamos sobre o que é esse verbo, suas conjugações no SIMPLE PRESENT, exemplos e pronúncia das conjugações. 
+          Não dá para perder, né?
+          Se você gostou, se inscreva no canal, deixe seu comentário e opiniões sobre possíveis tópicos para nossos próximos vídeos. 
+          ENJOY!</p>
       </div>
       <div class="col-md-5 order-md-1">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-SFTzs4dUQk?si=DQ-Qr_3DVww_5fct" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
-
     <hr class="featurette-divider">
-
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Verbo "To be" - <span class="text-body-secondary">Negativa e Questão (sem enrolação!)</span></h2>
+        <p class="lead">Hello guys! Quer continuar aprendendo sobre o VERBO TO BE? Então, dê play nesse vídeo, aprenda, ouça, repita as palavras e SEJA FELIZ!
+          </p>
       </div>
       <div class="col-md-5">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/D2WRoxI96ok?si=8cjlxqLFZyiSd1aO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
