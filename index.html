@@ -1,6 +1,7 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
+<html lang="pt-br" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js">
+      </script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,7 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
 
     
 
@@ -130,11 +132,13 @@
       }
 
 
-      .send-flowers-regular {
-       font-family: "Send Flowers", cursive;
-      font-weight: 400;
-      font-style: normal;
-      }
+      .avatar-container img {
+      transition: border 0.1s ease; /* Adiciona um efeito suave na transição da borda */
+    }
+
+    .avatar-container img:hover {
+      border: 5px solid orange; /* Borda laranja quando o mouse passar sobre a imagem */
+    }
   
     </style>
 
@@ -143,22 +147,6 @@
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
-
     <div class="container text-center">
       <img  class="logo"   src="img/logo.png">
       <header class="d-flex justify-content-center py-3">
@@ -188,7 +176,7 @@
           <div class="carousel-caption text-start">
             <h1>Explore os encantos de Nova York</h1>
             <p class="opacity-30">Venha aprimorar seu inglês e descobrir a magia de Nova York em uma viagem inesquecível com a nossa escola</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Saiba Mais</a></p>
+            <p><a class="btn btn-lg btn-primary" onclick="imagemCarrossel('Nova York')">Saiba Mais</a></p>
           </div>
         </div>
       </div>
@@ -198,7 +186,7 @@
           <div class="carousel-caption">
             <h1>London Calling: Aprenda Inglês na Capital do Mundo</h1>
             <p>Londres é onde história, cultura e modernidade se encontram, oferecendo uma experiência única para quem deseja explorar o mundo e aprender inglês.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <p><a class="btn btn-lg btn-primary" onclick="imagemCarrossel('Londres')">Learn more</a></p>
           </div>
         </div>
       </div>
@@ -208,17 +196,17 @@
           <div class="carousel-caption text-start">
             <h1>Sidney: Onde o Inglês Encontra o Paraíso</h1>
             <p>Sydney é uma cidade vibrante que combina praias deslumbrantes, uma cultura única e um ambiente cosmopolita perfeito para quem quer aprender inglês de forma imersiva, enquanto explora uma das metrópoles mais icônicas do mundo.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Venha conhecer</a></p>
+            <p><a class="btn btn-lg btn-primary"onclick="imagemCarrossel('Sidney')">Venha conhecer</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/disney.webp" height="100%" width="100%">
+        <img src="img/disney.jpg" height="100%" width="100%">
         <div class="container">
           <div class="carousel-caption text-end">
             <h1>Orlando: Aprenda Inglês com Diversão e Magia</h1>
             <p style="color: aliceblue;">"Orlando é o destino perfeito para quem deseja aprender inglês enquanto se diverte em parques temáticos, experiências culturais e uma atmosfera vibrante, tornando cada dia uma nova aventura!</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Venha se aventurar</a></p>
+            <p><a class="btn btn-lg btn-primary" onclick="imagemCarrossel('Orlando')">Venha se aventurar</a></p>
           </div>
         </div>
       </div>
@@ -233,26 +221,103 @@
     </button>
   </div>
 
+  <!--Modal Teacher One-->
+  <div class="modal fade" id="modalTeacherOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/teache_one.jpg" width="33%" height="40%">
+          <img src="img/teacher_one1.jpg" width="33%" height="40%">
+          <img src="img/teacher_one2.jpg" width="32%" height="40%">
+          <h1 class="titulo-teacher text-center">Camila Nera Lima</h1> 
+          <p class="justify-content-center " style="margin: 12px; font-size:1.2em;text-align: justify;">Formada em Letras com habilitação em português e inglês pela Universidade Estadual Paulista (Unesp) de São José do Rio Preto. Ao longo de sua formação, desenvolveu uma paixão profunda pela língua inglesa, reconhecendo o poder da comunicação como uma ponte para novas culturas e oportunidades. Com uma sólida base acadêmica, Camila se dedicou a explorar as nuances da gramática, literatura e expressões idiomáticas, o que a inspirou a se tornar uma profissional comprometida em compartilhar esse conhecimento com seus alunos.
+          Sua paixão pela língua inglesa é movida pela crença de que aprender um novo idioma é também aprender a ver o mundo por outras perspectivas. Essa visão se reflete em seu estilo de ensino dinâmico, que valoriza a interação e a prática. Camila busca criar um ambiente onde seus alunos possam desenvolver confiança e fluência no inglês, abrindo portas para o crescimento pessoal e profissional. A cada aula, ela transmite mais do que conhecimento linguístico: inspira entusiasmo e dedicação, cultivando em cada aluno a mesma paixão pela língua inglesa que a impulsionou desde o início de sua jornada.</p>  
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <!--Modal Teacher Two-->
+  <div class="modal fade" id="modalTeacherTwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/teacher_two.jpg" width="33%" height="40%">
+          <img src="img/teacher_two2.jpg" width="33%" height="40%">
+          <img src="img/teacher_two3.jpg" width="32%" height="40%">
+          <h1 class="titulo-teacher text-center">Anna Luisa Lopes</h1> 
+          <p class="justify-content-center " style="margin: 12px; font-size:1.2em;text-align: justify;">
+            Formada em Letras com habilitação em português e inglês pela Universidade Estadual Paulista (Unesp) de São José do Rio Preto. Desde a universidade, sua paixão pela língua inglesa a levou a explorar profundamente o idioma, compreendendo não apenas as regras gramaticais, mas também a cultura e as sutilezas que tornam o inglês uma língua tão rica e diversa. Movida pela curiosidade e pelo desejo de se comunicar com pessoas ao redor do mundo, Anna encontrou na língua inglesa uma forma de conectar diferentes culturas e ampliar horizontes.
+            Para Anna, ensinar inglês é mais do que ensinar palavras e regras: é despertar nos alunos a confiança para explorar o mundo e se expressar livremente. Suas aulas são dinâmicas e centradas no aluno, criando um ambiente acolhedor onde cada pessoa pode aprender no seu ritmo e desenvolver a fluência de maneira natural. A paixão de Anna pela língua inglesa transparece em cada aula que ministra, inspirando seus alunos a abraçarem o aprendizado com entusiasmo e a descobrirem novas oportunidades por meio do domínio do idioma.
+          </p>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal Carrosel -->
+  <div class="modal fade" id="modalCarrosel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="myCarouselInside" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarouselInside" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarouselInside" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarouselInside" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarouselInside" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 25rem; ">
+              <img id="imagemCarrosel1" src="" height="100%" width="100%">
+            </div>
+            <div  class="carousel-item"style="height: 25rem;">
+              <img id="imagemCarrosel2" src="" height="100%" width="100%">
+            </div>
+            <div class="carousel-item" style="height: 25rem;">
+              <img id="imagemCarrosel3" src="" height="100%" width="100%">
+            </div>
+            <div  class="carousel-item" style="height: 25rem;">
+              <img id="imagemCarrosel4" src="" height="100%" width="100%">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselInside" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarouselInside" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <h2 id="tituloCidade" class="text-center "></h2>
+        <p   id="informacoesCidade" class="justify-content-center " style="margin: 12px; font-size:1.2em;text-align: justify;"></p>
+        <a class="text-center" href="preco.html"><img src="img/button.png" width="40%" height="10%" alt="botao_letSGo"></a>
+      </div>
+    </div>
+  </div>
 
   <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
     <div class="row text-center">
-      <div class="col-lg-6">
-        <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="img/camila_avatar.png" ><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+      <div class="col-lg-6 avatar-container">
+        <a onclick="exibirModalOne()"><img class="bd-placeholder-img rounded-circle" width="200" height="200" src="img/camila_avatar.png"  ></a>
         <h2 class="fw-normal titulo-teacher">Camila Nera Lima</h2>
         <p>Conheça mais a história da  nossa <i>teacher</i> Camila Nera Lima</p>
-        <p><a class="btn btn-primary" href="#">Let´s Go ! &raquo;</a></p>
+        <p><a class="btn btn-primary" onclick="exibirModalOne()">Let´s Go ! &raquo;</a></p>
       </div>
-      <div class="col-lg-6">
-        <img class="bd-placeholder-img rounded-circle" width="200" height="200" src="img/anna_luisa_avatar.png"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <h2 class="fw-normal titulo-teacher">Anna Luisa Lopes</h2>
+      <div class="col-lg-6 avatar-container">
+        <a onclick="exibirModalTwo()"><img class="bd-placeholder-img rounded-circle" width="200" height="200" src="img/anna_luisa_avatar.png"></a>
+        <h2 class="fw-normal titulo-teacher ">Anna Luisa Lopes</h2>
         Conheça mais a história da  nossa <i>teacher</i> Anna Luisa Lopes</p>
-        <p><a class="btn btn-primary" href="#">Let´s Go ! &raquo;</a></p>
+        <p><a class="btn btn-primary" onclick="exibirModalTwo()">Let´s Go ! &raquo;</a></p>
       </div>
     </div>
 
@@ -304,20 +369,72 @@
 
   <!-- FOOTER -->
   <div style="width: 100%;">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center footer border-top">
-      <div class="col-md-6 d-flex align-items-center">
-        <img src="img/logo_black.png" title="logomarca_preta" width="400px" height="200px">
+    <footer class="d-flex flex-column align-items-center footer border-top py-4">
+      <div class="d-flex justify-content-center">
+         <a href="#"><img src="img/logo_black.png" alt="logomarca_preta" width="400px" height="200px"></a>
       </div>
-  
-      <ul class="nav col-md-12 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      <h5 style="color: black;">Fique ligado nas nossas redes-sociais</h5>
+
+      <ul class="nav justify-content-center list-unstyled d-flex">
+        <li class="ms-1"><a style="color: black;" href="https://www.instagram.com/verbaleasy" target="_blank"><h1 class="bi bi-instagram"></h1></a></li>
+        <li class="ms-3"><a   style="color: black;" href="https://www.facebook.com/share/GQAJ1owir6Agab6C/?mibextid=LQQJ4d" target="_blank"><h1 class="bi bi-facebook"></h1></a></li>
+        <li class="ms-3"><a style="color: black;" href="https://www.youtube.com/channel/UCBYbnJvtbZ5ETGGi7epgkIA" target="_blank"><h1 class="bi bi-youtube"></h1></a></li>
       </ul>
     </footer>
   </div>
 </main>
 <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+function exibirModalOne(){
+  let modal = new bootstrap.Modal(document.getElementById('modalTeacherOne'))
+  modal.show()
+}
+function exibirModalTwo(){
+  let modal = new bootstrap.Modal(document.getElementById('modalTeacherTwo'))
+  modal.show()
+}
+
+function imagemCarrossel(pais){
+  let imagemCarrosel1 = document.getElementById("imagemCarrosel1");
+  let imagemCarrosel2 = document.getElementById("imagemCarrosel2");
+  let imagemCarrosel3 = document.getElementById("imagemCarrosel3");
+  let imagemCarrosel4 = document.getElementById("imagemCarrosel4");
+  let modal = new bootstrap.Modal(document.getElementById('modalCarrosel'))
+
+  if(pais === 'Nova York'){
+    imagemCarrosel1.src = "img/new-york-2.jpg";
+    imagemCarrosel2.src = "img/nova_york1.jpg";
+    imagemCarrosel3.src = "img/new-york.jpg";
+    imagemCarrosel4.src = "img/nova_york.jpg";
+    document.getElementById('tituloCidade').innerText ='Aprenda Inglês com a Energia de Nova York';
+    document.getElementById('informacoesCidade').innerText = "A cidade de Nova York é conhecida como a capital do mundo, um lugar onde diversas culturas se encontram, e o inglês é o principal idioma que conecta pessoas de todas as partes. Com sua atmosfera vibrante e oportunidades ilimitadas, Nova York é o cenário ideal para aprimorar suas habilidades no idioma. Nós da VerbalEasy, buscamos trazer essa mesma energia e autenticidade para as aulas, oferecendo uma experiência imersiva que reflete a realidade e o dinamismo da cidade.Estudar inglês na VerbalEasy é mais do que aprender regras gramaticais; é preparar-se para o mundo. Incorporamos o espírito nova-iorquino em cada aula, trazendo situações práticas e inspiradas na vida real da cidade que nunca dorme. Se o seu objetivo é dominar o inglês e se comunicar com confiança no trabalho, nas viagens ou nos estudos, convido você a embarcar nessa jornada. Vamos juntos explorar o idioma com o entusiasmo de Nova York!"
+  }else if(pais === 'Londres'){
+    imagemCarrosel1.src = "img/londres.jpg";
+    imagemCarrosel2.src = "img/londres_2.jpg";
+    imagemCarrosel3.src = "img/londres_3.jpg";
+    imagemCarrosel4.src = "img/londres_4.jpg";
+    document.getElementById('tituloCidade').innerText ='Aprenda Inglês com a Tradição e o Estilo de Londres';
+    document.getElementById('informacoesCidade').innerText = "Londres é muito mais do que uma cidade; é um verdadeiro centro global onde o inglês evoluiu ao longo dos séculos e continua a se reinventar. Nós da VerbalEasy trazemos para você  o melhor dessa tradição e diversidade para as aulas, com o intuito de oferecer um aprendizado que vá além da língua e se conecte com a cultura londrina.Com a gente, você aprenderá inglês de forma prática, inspirada no dia a dia de Londres — seja para se comunicar em reuniões de negócios em Canary Wharf, navegar pelos mercados de Camden ou conversar sobre arte nas galerias de Soho. Cada aula é uma viagem pelos sotaques, expressões e nuances que tornam o inglês londrino tão autêntico e cativante. Vamos juntos explorar o idioma com o estilo e a riqueza cultural de Londres, preparando você para se expressar com confiança em qualquer situação."
+  }else if(pais === 'Sidney'){
+    imagemCarrosel1.src = "img/sidney.jpg";
+    imagemCarrosel2.src = "img/sidney1.jpg";
+    imagemCarrosel3.src = "img/sidney3.jpg";
+    imagemCarrosel4.src = "img/sidney4.jpg";
+    document.getElementById('tituloCidade').innerText ='Aprenda Inglês com o Espírito de Sidney';
+    document.getElementById('informacoesCidade').innerText = "Sidney é uma cidade vibrante e multicultural, onde o inglês conecta culturas de todo o mundo e reflete a energia única da Austrália. Nós da VerbalEasy, buscamos trazer o dinamismo de Sidney para as nossas aulas, oferecendo uma experiência de aprendizado que reflete a diversidade e o estilo de vida da cidade.Com a gente, você aprenderá inglês de forma prática e autêntica, inspirado pelo cotidiano de Sidney — desde o convívio em seus cafés descontraídos até o ambiente profissional do Distrito Comercial Central. Cada aula é uma imersão nas expressões, sotaques e nuances que tornam o inglês australiano tão particular e acolhedor. Vamos explorar juntos o idioma, com a autenticidade e a energia que fazem de Sidney um dos destinos mais encantadores para aprender e se comunicar com confiança."
+  }else if(pais === 'Orlando'){
+    imagemCarrosel1.src = "img/orlando4.jpg";
+    imagemCarrosel2.src = "img/orlando1.jpg";
+    imagemCarrosel3.src = "img/orlando2.jpg";
+    imagemCarrosel4.src = "img/orlando3.jpg";
+    document.getElementById('tituloCidade').innerText ='Aprenda Inglês com o Encanto de Orlando e a Magia da Disney';
+    document.getElementById('informacoesCidade').innerText = "Orlando é uma cidade onde a magia e a realidade se encontram, especialmente nos parques da Disney, um destino que encanta visitantes de todas as idades e de todas as partes do mundo. Nós aqui da VerbalEasy, trazemos esse encanto e hospitalidade para cada aula, tornando o aprendizado uma experiência mágica e envolvente, inspirada no espírito único de Orlando.Estudar inglês conosco é como se preparar para uma jornada mágica, onde você aprenderá não só o idioma, mas também a comunicação prática para o dia a dia em Orlando — desde pedir informações nos parques temáticos até interagir com visitantes internacionais. Cada aula é uma oportunidade de se conectar com o idioma de forma leve e prática, como se você estivesse vivendo um dia na Disney. Vamos explorar juntos o inglês, com a alegria e o entusiasmo que fazem de Orlando o lugar perfeito para aprender e se comunicar com confiança."
+  }
+
+  modal.show();
+}
+</script>
 
     </body>
 </html>
